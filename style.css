@@ -1,86 +1,96 @@
-body{
-margin:0;
-font-family:Arial;
-background:#001f4d;
-color:white;
-transition:0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px;
-background:#002b80;
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
+header {
+  background: black;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
 }
 
-.hero{
-text-align:center;
-padding:50px;
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.players{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:20px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.card{
-width:250px;
-height:350px;
-perspective:1000px;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-.inner{
-position:relative;
-width:100%;
-height:100%;
-transition:transform 0.8s;
-transform-style:preserve-3d;
+.hero {
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.card:hover .inner{
-transform:rotateY(180deg);
+.hero h1 {
+  font-size: 2.5rem;
 }
 
-.front, .back{
-position:absolute;
-width:100%;
-height:100%;
-backface-visibility:hidden;
-border-radius:15px;
-overflow:hidden;
-text-align:center;
-background:#0f1a2c;
-padding:15px;
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.front img{
-width:100%;
-height:200px;
-object-fit:cover;
+section {
+  padding: 60px 20px;
+  width: 90%;
+  margin: auto;
 }
 
-.back{
-transform:rotateY(180deg);
-background:#002b80;
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-.captain{
-border:3px solid gold;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
 }
 
-input{
-padding:10px;
-margin:20px;
-width:80%;
-max-width:400px;
+.skill {
+  background: #1e293b;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: black;
 }
